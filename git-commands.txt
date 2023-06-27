@@ -1,0 +1,87 @@
+
+
+C:\Users\nc67322>mkdir naveen
+
+C:\Users\nc67322>cd naveen
+
+C:\Users\nc67322\naveen>git init
+Initialized empty Git repository in C:/Users/nc67322/naveen/.git/
+
+C:\Users\nc67322\naveen>git add .
+
+C:\Users\nc67322\naveen>git add data.txt
+
+C:\Users\nc67322\naveen>git remote add origin https://github.com/chnaveen123/newrepo1.git
+
+
+
+
+C:\Users\nc67322\naveen>git commit -m 'init'
+[master (root-commit) 2364deb] 'init'
+ 1 file changed, 5 insertions(+)
+ create mode 100644 data.txt
+
+C:\Users\nc67322\naveen>git checkout -b new_branch
+Switched to a new branch 'new_branch'
+
+C:\Users\nc67322\naveen>git add .
+
+C:\Users\nc67322\naveen>git commit -m "first commit"
+On branch new_branch
+nothing to commit, working tree clean
+
+C:\Users\nc67322\naveen>git branch -M main
+
+C:\Users\nc67322\naveen>git config --global user.email "n.chiruveru@zensar.com"
+
+C:\Users\nc67322\naveen>git config --global user.name "naveen"
+
+C:\Users\nc67322\naveen>git add data.txt
+
+C:\Users\nc67322\naveen>git commit -m "first commit"
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\nc67322\naveen>git push origin main
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': n.chiruveru@zensar.com
+Password for 'https://n.chiruveru@zensar.com@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/chnaveen123/newrepo1.git/'
+
+C:\Users\nc67322\naveen>
+
+C:\Users\nc67322\naveen>git push origin main
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 880 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/chnaveen123/newrepo1.git
+ * [new branch]      main -> main
+
+C:\Users\nc67322\naveen>git commit -m "new Data Added"
+On branch main
+Changes not staged for commit:
+        modified:   data.txt
+
+no changes added to commit
+
+C:\Users\nc67322\naveen>git add data.txt
+
+C:\Users\nc67322\naveen>git commit -m "new Data Added"
+[main c8ba7d6] new Data Added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+C:\Users\nc67322\naveen>git push origin main
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 142.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/chnaveen123/newrepo1.git
+   2364deb..c8ba7d6  main -> main
+
+C:\Users\nc67322\naveen>
